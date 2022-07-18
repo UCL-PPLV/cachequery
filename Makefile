@@ -8,13 +8,13 @@ SOURCES := $(addprefix src/, main.c msrdrv.c parser.c cache.c config.c histogram
 $(TARGET)-objs += $(SOURCES:.c=.o)
 
 # fix error with new gcc version
-ccflags-y += -I/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/include
+ccflags-y += -I/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.1/include
 ccflags-y += -Wall
 
 obj-m := $(TARGET).o
 
 # list of supported cpus: i7-4790 i5-6500 i7-8550u
-cpu ?= i5-6500
+cpu ?= i5-7200u
 EXTRA_CFLAGS += -DCPU=$(cpu)
 
 all:
