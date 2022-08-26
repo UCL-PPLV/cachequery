@@ -23,7 +23,7 @@ all:
 
 qemu:
 	make -C ../../linux/obj/linux-x86-basic M=$(PWD) modules
-	cp *.ko $(PWD)/out
+	sudo cp *.ko $(PWD)/out
 
 clean:
 	make -C $(KERNEL) M=$(PWD) clean
