@@ -6,7 +6,7 @@
 #define L3_WAYS_BITS 4
 #define L3_SET_BITS 10
 #define L3_LINE_BITS 6
-#define L3_SLICE_BITS 3
+#define L3_SLICE_BITS 2
 
 #define L2_PHYS_INDEXED 1
 #define L2_WAYS_BITS 2
